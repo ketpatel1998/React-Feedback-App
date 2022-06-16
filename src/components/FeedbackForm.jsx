@@ -14,7 +14,7 @@ function FeedbackForm() {
 
     useEffect(() => {
         console.log("---"+editDataItem.edit);
-        if(editDataItem.edit == true){
+        if(editDataItem.edit === true){
             setDisableStatus(false);
             setText(editDataItem.item.text);
             setSelected(editDataItem.item.rating);

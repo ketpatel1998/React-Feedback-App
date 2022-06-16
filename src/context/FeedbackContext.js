@@ -27,7 +27,7 @@ export const FeedbackProvider = ({children}) => {
     });
     const deleteComment = (id) => {
         if(window.confirm("Are you sure you want to delete this comment ?")){
-            setFeedbackData(feedbackData.filter((item)=> item.id != id));
+            setFeedbackData(feedbackData.filter((item)=> item.id !== id));
         }
     }
     const addNewComments = (newComment) => {
